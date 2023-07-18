@@ -8,8 +8,6 @@
 * Copyright 2019 Creative Tim (https://www.creative-tim.com)
 
 
-* Coded by Creative Tim
-
 =========================================================
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -238,8 +236,9 @@ select {
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
-  -webkit-appearance: button; }
+[type="submit"] 
+/* {
+  -webkit-appearance: button; } */
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -262,8 +261,9 @@ input[type="checkbox"] {
 input[type="date"],
 input[type="time"],
 input[type="datetime-local"],
-input[type="month"] {
-  -webkit-appearance: listbox; }
+input[type="month"] 
+/* {
+  -webkit-appearance: listbox; } */
 
 textarea {
   overflow: auto;
@@ -293,9 +293,10 @@ progress {
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
-[type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: none; }
+[type="search"] 
+{
+  outline-offset: -2px; }
+  /* -webkit-appearance: none; } */
 
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -9477,7 +9478,7 @@ fieldset[disabled]
     padding: 0; }
   .footer .nav {
     display: inline-block;
-    float: left;
+    /* float: left; */
     margin-bottom: 0;
     padding-left: 30px;
     list-style: none; }
@@ -11872,7 +11873,7 @@ table.tablesorter thead tr .headerSortDown {
   padding: 0 5px; }
 
 .color-swatch-header .pass-fail-item {
-  float: left;
+  /* float: left; */
   display: inline-block;
   text-align: center;
   padding: 2px; }
@@ -11920,7 +11921,7 @@ table.tablesorter thead tr .headerSortDown {
 
 .table-colors .swatch {
   display: inline-block;
-  float: left;
+  /* float: left; */
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -11936,7 +11937,7 @@ table.tablesorter thead tr .headerSortDown {
   font-weight: 600;
   line-height: 10px;
   display: inline-block;
-  float: left;
+  /* float: left; */
   margin: 5px 10px 0 0;
   padding: 2px 4px;
   letter-spacing: .05em;

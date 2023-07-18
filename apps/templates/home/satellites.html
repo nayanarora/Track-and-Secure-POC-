@@ -7,7 +7,7 @@
 
 {% block content %}
 
-  <div class="content">
+  <!-- <div class="content">
     <div class="row">
       <div class="col-md-12">
         <div class="card">
@@ -622,9 +622,32 @@
         </div>
       </div>
     </div>
+  </div> -->
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card card-plain">
+          <div class="card-header">
+            Tracking Map (Real Time) 
+          </div>
+          <div class="card-body">
+            <div id="map" class="map"></div>
+          </div>
+          <button class="card-header">
+            Switch to VR/AR 
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
-
 {% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
-{% block javascripts %}{% endblock javascripts %}
+{% block javascripts %}
+<script>
+  $(document).ready(function() {
+    // Javascript method's body can be found in assets/js/demos.js
+    demo.initGoogleMaps();
+  });
+</script>
+{% endblock javascripts %}
